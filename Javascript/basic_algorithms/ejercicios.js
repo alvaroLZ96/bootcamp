@@ -27,3 +27,21 @@ car1.finalPrice = car1.basePrice + globalBasePrice;
 car2.finalPrice = globalBasePrice + car2.basePrice;
 console.log (car1.finalPrice);
 console.log (car2.finalPrice);
+
+//iteración 3
+let sum = 10 * 5;
+console.log(sum);
+
+let div = 10 / 2;
+console.log(div);
+
+let resto = 15 % 9;
+console.log(resto);
+
+let p = 10 ; let j = 5;
+let o = p + j;
+console.log(o);
+
+let c = 10 ; let m = 5;
+let i = c * m;
+console.log(i);
