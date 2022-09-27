@@ -28,7 +28,7 @@ car2.finalPrice = globalBasePrice + car2.basePrice;
 console.log (car1.finalPrice);
 console.log (car2.finalPrice);
 
-//iteración 3
+//iteración3
 let sum = 10 * 5;
 console.log(sum);
 
@@ -45,3 +45,61 @@ console.log(o);
 let c = 10 ; let m = 5;
 let i = c * m;
 console.log(i);
+
+//iteración4
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+console.log(avengers[0])
+
+let avengers1 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+avengers1[0] = "IRONMAN";
+console.log(avengers1);
+
+const avengers2 = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+console.log(avengers2.length);
+
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+rickAndMortyCharacters.push("Morty" , "Summer");
+console.log(rickAndMortyCharacters[rickAndMortyCharacters.length -1]);
+
+const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+rickAndMortyCharacters2.pop();
+console.log(rickAndMortyCharacters2[0]);
+console.log(rickAndMortyCharacters2[rickAndMortyCharacters2.length-1]);
+
+const rickAndMortyCharacters3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+
+rickAndMortyCharacters3.splice(1,1);
+
+console.log(rickAndMortyCharacters3)
+
+
+
+//iteración5
+
+const number1 = 10;
+const number2 = 20;
+const number3 = 2;
+
+if (number2 / number1 == 2) {
+    console.log("number2 dividido entre number1 es igual a 2");
+  }
+  
+  if (number1 !== number2) {
+    console.log("number1 es estrictamente distinto a number2");
+  }
+  
+  if (number3 != number1) {
+    console.log("number3 es distinto number1");
+  }
+  
+  if (number3 * 5 == number1) {
+    console.log("number3 por 5 es igual a number1");
+  }
+  
+  if (number3 * 5 == number1 && number1 * 2 == number2) {
+    console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+  }
+  
+  if (number2 / 2 == number1 || number1 / 5 == number3) {
+    console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
+  }
