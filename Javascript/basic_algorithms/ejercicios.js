@@ -103,3 +103,25 @@ if (number2 / number1 == 2) {
   if (number2 / 2 == number1 || number1 / 5 == number3) {
     console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
   }
+
+  //iteración6
+
+
+  for (let index = 0; index < 10; index++) {
+console.log(index)}
+
+
+
+for (let index = 0; index < 10; index++) {
+  if (index % 2 === 0) {
+    console.log(index)
+  }
+}
+
+for (let index = 0; index < 10; index++) 
+  if (index < 9) {
+  console.log ('Intentando dormir 🐑');
+}
+else {
+console.log ('Dormido!')
+}
