@@ -1,4 +1,4 @@
-// iteración1
+/* // iteración1
 function sum(numberOne , numberTwo) {
    return numberOne > numberTwo ? numberOne : numberTwo
   
@@ -29,3 +29,35 @@ for (number of numbers){
 }
     
 }
+***************************************
+//iteración 4
+
+
+//iteración 5
+
+
+// iteración 6  */
+
+const duplicates = [
+    'sushi',
+    'pizza',
+    'burger',
+    'potatoe',
+    'pasta',
+    'ice-cream',
+    'pizza',
+    'chicken',
+    'onion rings',
+    'pasta',
+    'soda'
+  ];
+const removeDuplicates =(comida) => {
+let arrayNoRepeat =[];
+    for (let comida of duplicates) {
+    if (arrayNoRepeat.includes(comida)== false) {
+        arrayNoRepeat.push(comida)
+}}
+   return arrayNoRepeat;
+}
+
+console.log(removeDuplicates(duplicates))
