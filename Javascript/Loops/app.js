@@ -57,8 +57,11 @@ for(let data in aliens){
 
 //preguntar por que sale por consola 70 veces!!!!!
 
-/* // iteración 6
-const toys = [
+ // iteración 6
+/* Usa un bucle for...of para recorrer todos los juguetes 
+y elimina los que incluyan la palabra gato. Recuerda que puedes usar la función 
+.includes() para comprobarlo.Puedes usar este array: */
+const toys2 = [
 	{id: 5, name: 'Buzz MyYear'}, 
 	{id: 11, name: 'Action Woman'}, 
 	{id: 23, name: 'Barbie Man'}, 
@@ -66,24 +69,16 @@ const toys = [
 	{id: 40, name: 'El gato felix'}
 	]
 
-let newObject = Object.values(toys);
-	 for (let gato of newObject){
-		if (gato.includes("gato")){
-			newObject.splice(0,1);
-			console.log(gato);
+	 for (let toy of toys2) {
+		if (toy.name.includes("gato")) {
+			delete toy;
+		} else {
+			console.log(toy);
 		}
 
 
-	} 
-/* const withoutCat =(toys)=>{
-	for(let toy of toys){
-	if(toy.includes("gato")) {
-		toys.splice(0, 1)	
-	}
-	console.log(toys)
-}
-}
-console.log(withoutCat(toys)) */
+
+
 
  
 //Iteración #7: For...of avanzado
