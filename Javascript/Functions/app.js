@@ -140,3 +140,5 @@ Puedes usar este array para probar tu función: */
   function repeatCounter(param) {
     // insert code
   }
+
+  //devolverlo en un objeto
