@@ -1,11 +1,15 @@
 // iteración1
+/* Completa la función que tomando dos números como argumento 
+devuelva el más alto. */
 function sum(numberOne , numberTwo) {
    return numberOne > numberTwo ? numberOne : numberTwo
-  
-}
+  }
 console.log(sum(1,2))
 
 // iteración2
+/* Completa la función que tomando un array de strings como argumento 
+devuelva el más largo, en caso de que dos strings tenga la misma 
+longitud deberá devolver el primero. */
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 const findLongestWord = (avengers) => {
     let longestWord = "";
@@ -21,7 +25,8 @@ console.log(result);
 
 //iteración3
 /* Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada uno de los elementos.
-Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz. */
+Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de 
+todos los números de la matriz. */
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 const sumNumbers= (numbers) => {
     let total = 0;
@@ -64,6 +69,10 @@ return finalSum;
 console.log(averageWord(mixedElements));
 
 // iteración 6
+/* Crea una función que reciba por parámetro un array 
+y compruebe si existen elementos duplicados, en caso que existan
+ los elimina para retornar un array sin los elementos duplicados. 
+ Puedes usar este array para probar tu función: */
 
 const duplicates = [
     'sushi',
@@ -110,15 +119,15 @@ const nameFinder = [
 const finderName = (array, param2) => {
 
     for (let name of array){
-    if (array.includes(param2)) {
-console.log(array.indexOf(name))
+    if (array.includes(`${param2}`)) {
+console.log(array.indexOf(param2))
 return true
     } else {
 return false;
  }
 }
  }
-console.log (finderName(nameFinder, "Peter"))
+console.log (finderName(nameFinder, "Marc"))
 
 //Iteration #8: Contador de repeticiones
 /* Crea una función que nos devuelva el número de veces
@@ -152,7 +161,7 @@ Puedes usar este array para probar tu función: */
 
   repeatCounter(counterWords);
 
-
+/* 
   let totalCount = [];
 const repeatCounter = (elements) =>{
   elements.forEach((element) => {
@@ -160,4 +169,4 @@ const repeatCounter = (elements) =>{
   })
   return totalCount;
 }
-console.log(repeatCounter(counterWords));
+console.log(repeatCounter(counterWords)); */

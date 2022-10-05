@@ -34,25 +34,44 @@ subjects.foreach((subjects, i) =>{
 ++++++++++++++++++ */
 
 //iteración 3
+/* Usa un bucle forof para recorrer todos los destinos del array.
+ Imprime en un console.log sus valores. */
 const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 for (let country of placesToTravel){
 console.log(country)
 }
 
 //iteración 4
+/* Usa un for...in para imprimir por consola los datos del alienígena
+Puedes usar este objeto: */
 const alien = {
     name: 'Wormuck',
     race: 'Cucusumusu',
     planet: 'Eden',
     weight: '259kg'
 }
-let aliens = JSON.stringify(alien);
 
-for(let data in aliens){
-	console.log(aliens);
+for(let data in alien){
+	/* console.log(data) */
+	console.log(`alien tiene una clave ${data} y un valor de ${alien[data]} `)
 }
 
-//preguntar por que sale por consola 70 veces!!!!!
+//Iteración #5: Probando For**
+/* Usa un bucle **for** para recorrer todos los destinos del array
+ y elimina los elementos que tengan el id 11 y 40. Imprime en un 
+ ***console log*** el array. Puedes usar este array: */
+ const placesToTravel2 = [{id: 5, name: 'Japan'}, 
+ {id: 11, name: 'Venecia'}, 
+ {id: 23, name: 'Murcia'}, 
+ {id: 40, name: 'Santander'}, 
+ {id: 44, name: 'Filipinas'}, 
+ {id: 59, name: 'Madagascar'}]7
+
+ for (let country of placesToTravel2){
+	if(country.id== 11 || country.id==40){
+	   placesToTravel2.splice(placesToTravel2.indexOf(country),1)
+	}}   
+   console.log(placesToTravel2)
 
  // iteración 6
 /* Usa un bucle for...of para recorrer todos los juguetes 
@@ -74,6 +93,9 @@ const toys2 = [
 		}
 
 //Iteración #7: For...of avanzado
+/* Usa un bucle for...of para recorrer todos los juguetes
+y añade los que tengan más de 15 ventas (sellCount) al array
+popularToys. Imprimelo por consola.. Puedes usar este array: */
 const popularToys = [];
 const toys = [
 	{id: 5, name: 'Buzz MyYear', sellCount: 10}, 
@@ -87,4 +109,4 @@ for(let toy of toys){
 		popularToys.push(toy);
 	}
 }
-console.log(popularToys);
+console.log(popularToys)
