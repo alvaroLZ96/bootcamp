@@ -137,8 +137,27 @@ Puedes usar este array para probar tu función: */
     'upgrade',
     'code'
   ];
-  function repeatCounter(param) {
-    // insert code
+  const repeatCounter = (array) => {
+    let contadorTotal = new Object();   //declaro una nueva variable que será un objeto donde 
+    for (let element of array) {        //las claves son las palabras y los valores las veces que aparece
+        if (contadorTotal[element] == null) {    //si el valor no existe, 
+        contadorTotal[element] = 1               //lo inicializamos en 1
+        }
+        else {                                   //Si ya tiene un valor le vamos sumando 1 a cada vuelta
+            contadorTotal[element] = contadorTotal[element] + 1;
+        }
+    }
+     console.log(contadorTotal);
   }
 
-  //devolverlo en un objeto
+  repeatCounter(counterWords);
+
+
+  let totalCount = [];
+const repeatCounter = (elements) =>{
+  elements.forEach((element) => {
+      totalCount[element] = totalCount[element] + 1 || 1;
+  })
+  return totalCount;
+}
+console.log(repeatCounter(counterWords));

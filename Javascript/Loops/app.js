@@ -9,14 +9,11 @@ const products = [
 'Cinrurón de Orión',
  'AC/DC Camiseta']
 
-const includesThat= (products)=>{
  for(let tShirt of products) {
    if (tShirt.includes("Camiseta")){
     console.log(tShirt) 
 }
  }
-} 
-console.log(includesThat(products))
 // iteración 2
 /* Comprueba en cada uno de los usuarios que tenga al menos dos trimestres 
 aprobados y añade la propiedad isApproved a true o false en consecuencia. 
@@ -73,14 +70,9 @@ const toys2 = [
 		if (toy.name.includes("gato")) {
 			delete toy;
 		} else {
-			console.log(toy);
+			console.log(toy)
 		}
 
-
-
-
-
- 
 //Iteración #7: For...of avanzado
 const popularToys = [];
 const toys = [
@@ -96,4 +88,3 @@ for(let toy of toys){
 	}
 }
 console.log(popularToys);
-
