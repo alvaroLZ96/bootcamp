@@ -3,7 +3,7 @@
 let myFavoriteHero = "Hulk";
 let x = 50;
 let h= 5; let y = 10;
-let z = 'z' + 'y';
+let z = h + y;
 
 // # iteración2 
 let character = {name: 'Jack Sparrow', age: 10};

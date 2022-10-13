@@ -65,7 +65,7 @@ for(let data in alien){
  {id: 23, name: 'Murcia'}, 
  {id: 40, name: 'Santander'}, 
  {id: 44, name: 'Filipinas'}, 
- {id: 59, name: 'Madagascar'}]7
+ {id: 59, name: 'Madagascar'}]
 
  for (let country of placesToTravel2){
 	if(country.id== 11 || country.id==40){

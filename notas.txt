@@ -1,0 +1,29 @@
+https://github.com/typicode/json-server
+
+mkdir(+nombre de la carpeta a crear) 
+mkdir server
+cd server
+npm init -y
+
+si pongo npm init (sin la y)-->nos lanza unas preguntas para hacerlo personalizado(version, description, entry point, test command, git repository, keywords)-->nos crea el json
+dentro de la carpeta server se crea un index.json
+
+se crea npm install json-server(se elimina el -g)-->crea el node modules
+
+luego creamos en la carpeta de server tbn un db.json(buscamos uno en internet por defecto)
+dentro de package.json en el apartado de dev copiamos "json server--watch db.json"
+
+
+en la terminal hacemos npm run start (porque en ese caso lo hemos llamado start en el db.json)
+
+
+luego por otro lado como no queremos subir node modules al github hay que incluir en .gitignore el node modules
+
+
+VITE
+
+npm create vite@latest
+...
+npm run dev
+
+se crea pages en app con elementos grandes con subcarpetas
