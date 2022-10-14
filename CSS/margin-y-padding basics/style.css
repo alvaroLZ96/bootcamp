@@ -1,0 +1,18 @@
+.one, .three{
+    padding:32px;
+}
+.one{
+    margin-bottom: 12px;
+    background-color:violet;
+    width:65%;
+}
+.two{
+    margin-bottom:48px;
+    background-color:blue;
+    width:75%;
+}
+.three{
+    margin-left: 35%;
+    background-color:orange;
+    width:20%;
+}

@@ -1,4 +1,9 @@
-//iteración 1
+//iteración 1**Mix for e includes**
+/* Dado el siguiente javascript usa forof para recorrer el array 
+de películas, genera un nuevo array con las categorías de las 
+películas e imprime por consola el array de categorías. Ten en cuenta 
+que las categorías no deberían repetirse. Para filtrar las categorías
+puedes ayudarte de la función **.includes()** */
 const movies = [
     {title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura']},
     {title: 'Spiderpan', duration: 122, categories: ['aventura', 'acción']},
@@ -12,15 +17,15 @@ if (movies.movie.categories.includes()== false){
     newArray.push(movie);
 }
 } */
-movies.flatMap(movie => movie.categories);
+/* movies.flatMap(movie => movie.categories);  */
 const categories =(movies)=>{
 let newArray =[];
 for (let movie of movies){
-    if (newArray.includes(movie)== false){
-        newArray.push(movie)
+    for(let category of movie.categories){
+    if (newArray.includes(category)== false){
+        newArray.push(category)
     } }
-    return newArray;
+    }
+return newArray;
 }
 console.log(categories(movies))
-    
-//iteración 2
