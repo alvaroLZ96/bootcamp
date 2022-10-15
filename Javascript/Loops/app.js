@@ -18,7 +18,7 @@ const products = [
 /* Comprueba en cada uno de los usuarios que tenga al menos dos trimestres 
 aprobados y añade la propiedad isApproved a true o false en consecuencia. 
 Una vez lo tengas compruébalo con un console.log. */
-/* 
+
 const alumns = [
     {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
 		{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
@@ -26,12 +26,17 @@ const alumns = [
 		{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
 		{name: 'Raquel Benito', T1: true, T2: true, T3: true}
 ]
- 
-subjects.foreach((subjects, i) =>{
-	if 
-
-}
-++++++++++++++++++ */
+ for (const alumn of alumns) {
+	alumn.isApproved = true
+	if(alumn.T1==false && alumn.T2==false){
+		alumn.isApproved= false; 
+	}else if(alumn.T2==false && alumn.T3==true){
+		alumn.isApproved= false;
+	}else if (alumn.T1== false && alumn.T3==true){
+		alumn.isApproved =false;
+	}
+ }
+ console.log(alumns)
 
 //iteración 3
 /* Usa un bucle forof para recorrer todos los destinos del array.
@@ -52,7 +57,6 @@ const alien = {
 }
 
 for(let data in alien){
-	/* console.log(data) */
 	console.log(`alien tiene una clave ${data} y un valor de ${alien[data]} `)
 }
 
@@ -90,12 +94,13 @@ const toys2 = [
 			delete toy;
 		} else {
 			console.log(toy)
-		}
+		}}
 
 //Iteración #7: For...of avanzado
 /* Usa un bucle for...of para recorrer todos los juguetes
 y añade los que tengan más de 15 ventas (sellCount) al array
 popularToys. Imprimelo por consola.. Puedes usar este array: */
+
 const popularToys = [];
 const toys = [
 	{id: 5, name: 'Buzz MyYear', sellCount: 10}, 
@@ -104,6 +109,7 @@ const toys = [
 	{id: 40, name: 'El gato con Guantes', sellCount: 8},
 	{id: 40, name: 'El gato felix', sellCount: 35}
 ]
+
 for(let toy of toys){
 	if (toy.sellCount > 15 ){
 		popularToys.push(toy);

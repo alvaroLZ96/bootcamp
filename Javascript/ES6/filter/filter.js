@@ -71,7 +71,7 @@ const streamers3 = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-/* 
+
 const newEvent =()=>{
 	const input = document.querySelector("input");
 	console.log(input)
@@ -84,7 +84,7 @@ const getData =(value)=>{
 console.log(search)
 	}
 	
- */
+ 
 /* 5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola 
 los streamers que incluyan la palabra introducida en el input. De esta forma, si 
 introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si introduzco 'i', 
@@ -100,9 +100,8 @@ const streamers4 = [
 	const newEvent2 =()=>{
 		const button = document.querySelector("button");
 		button.addEventListener("click", ()=>{
-			const input =document.querySelector("input").value
+			const input = document.querySelector("input").value
 			getData2(input)
-		
 		})
 	}
 	newEvent2()
