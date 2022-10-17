@@ -3,13 +3,13 @@ Crea una función llamada `findArrayIndex` que reciba como parametros un array d
  cuando el valor del array sea igual al valor del texto que enviaste como parametro. Haz varios ejemplos y compruebalos.
 Sugerencia de función:  function findArrayIndex(array, text) {}*/
 
-const list=['Caracol', 'Mosquito', 'Salamandra', 'Ajolote']
+const list = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
 
-function findArrayIndex(array, text){
-    for(let animal of array){
-        if(text == animal){
-            console.log( array.indexOf(animal));
-        }
+function findArrayIndex(array, text) {
+  for (let animal of array) {
+    if (text == animal) {
+      console.log(array.indexOf(animal));
     }
+  }
 }
-findArrayIndex(list,"Ajolote")
+findArrayIndex(list, "Ajolote");
